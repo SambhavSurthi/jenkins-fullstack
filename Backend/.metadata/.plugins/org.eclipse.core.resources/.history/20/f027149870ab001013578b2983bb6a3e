@@ -1,0 +1,32 @@
+package com.habit_tracker.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+
+
+@RestController
+@RequestMapping("habit-tracker")
+public class Client {
+	
+	
+	@GetMapping("/")
+	public String home() {
+		return "This is Habit Tracker Home Page";
+	}
+	
+	@GetMapping("/health")
+	public String health()
+	{
+		return "Healthyy";
+	}
+	
+	@GetMapping("/user/{name}")
+	public String greetUser(@PathVariable String name)
+	{
+		return "Hiii "+name+"!!!";
+	}
+
+}

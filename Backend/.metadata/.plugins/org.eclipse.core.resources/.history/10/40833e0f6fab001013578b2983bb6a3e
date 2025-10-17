@@ -1,0 +1,8 @@
+package com.habit_tracker;
+
+public class Snippet {
+	public static void main(String[] args) {
+		com.habit-tracker
+	}
+}
+
