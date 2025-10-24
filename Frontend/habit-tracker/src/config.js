@@ -1,3 +1,3 @@
-export const BACKEND_BASE_URL = "http://localhost:8080";
+export const BACKEND_BASE_URL = "http://localhost:2030/habit-tracker";
 
 
